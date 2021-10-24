@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #9bb0f5e7;
+}
+
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h3>19UBC646</h3>
+
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, sed cum. Beatae, at? Asperiores, perspiciatis quam facilis odio quasi, praesentium suscipit explicabo provident ratione qui delectus unde minus? Unde, facilis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur numquam dolorem sit fuga officiis quod ad, dolore similique fugiat eligendi aspernatur, optio est eum assumenda magni eveniet in culpa voluptate? Libero sed earum quibusdam dicta id excepturi esse iusto culpa aspernatur! Veritatis deleniti assumenda consequuntur iure optio exercitationem omnis delectus laboriosam illo!</h5>
+      <div class="fakeimg" style="height:200px;"><img src="data:image/jpeg;base64,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" alt="" width="1200" height="200" ></div>
+      <p>..</p>
+      <p>St.Joseph's college. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, blanditiis. Commodi, accusamus quod nemo ea ab enim veniam officiis saepe inventore facilis. Aut sit vel dolores sequi quia cupiditate cumque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur sunt qui tempora porro sit totam, labore quae. At corrupti dignissimos tempora pariatur, nulla error, accusamus, odio deserunt eligendi repellat quas.</p>
+<div class="footer">
+  <h2>!! THANK YOU !!</h2>
+</div>
+
+</body>
+</html>
