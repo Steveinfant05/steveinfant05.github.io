@@ -1,0 +1,8 @@
+{
+    "name": "form_validation",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Steve",
+    "contributors": [],
+    "dependencies": {}
+}
